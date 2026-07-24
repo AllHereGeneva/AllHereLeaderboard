@@ -847,17 +847,19 @@
      (pan-y); two fingers zoom. Once zoomed in, the map owns every gesture (none). */
   .ahl__map { touch-action: pan-y; }
   .ahl__map.is-zoomed { touch-action: none; }
-  /* right-edge scrim instead of a solid card: readable on the right, fades to
-     transparent on the left so the map stays visible/usable behind the list */
+  /* a compact translucent panel anchored BOTTOM-RIGHT (~half height): readable on
+     the right, fades toward the top-left so the map stays open above and to the left */
   .ahl__listcard {
-    top: 0; right: 0; bottom: 0; left: auto;
+    top: auto; right: 0; bottom: 0; left: auto;
     width: min(272px, 78vw);
-    max-width: none; height: auto; max-height: none;
+    height: 52dvh; max-width: none; max-height: 52dvh;
     margin: 0;
     border: none; border-radius: 0; box-shadow: none;
     background: linear-gradient(to left, rgba(5,15,35,0.92) 0%, rgba(5,15,35,0.82) 52%, rgba(5,15,35,0) 100%);
     backdrop-filter: none; -webkit-backdrop-filter: none;
-    padding: 16px 14px 8px 26px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, #000 40px);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, #000 40px);
+    padding: 8px 14px 8px 26px;
   }
   .ahl__rows {
     flex: 1 1 auto; min-height: 0; max-height: none;
