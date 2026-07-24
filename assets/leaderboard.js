@@ -531,10 +531,10 @@
       // swallows the pin's click and the cluster never auto-zooms
       if (onOverlay(ev) || (ev.target.closest && ev.target.closest('.ahl__pin'))) return;
       self.cancelAnim();
-      // on mobile, DON'T capture touch: the browser needs the vertical gesture to
-      // scroll/snap between screens (the map still pans horizontally in pointermove)
-      var touchMobile = ev.pointerType === 'touch' && window.innerWidth <= 820;
-      if (!touchMobile) map.setPointerCapture(ev.pointerId);
+      // capture to pan — EXCEPT mobile touch at fit-zoom, where the browser needs the
+      // vertical gesture to scroll/snap between screens. Once zoomed, the map captures.
+      var touchScroll = ev.pointerType === 'touch' && window.innerWidth <= 820 && self.zoom <= 1.02;
+      if (!touchScroll) map.setPointerCapture(ev.pointerId);
       self.pointers.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
       if (self.pointers.size === 1) { map.classList.add('is-panning'); self._moved = false; self._vx = self._vy = 0; }
       if (self.pointers.size === 2) { self.pinchDist = self.twoDist(); }
@@ -551,14 +551,13 @@
         return;
       }
       if (Math.abs(dx) + Math.abs(dy) > 2) self._moved = true;
-      // mobile touch: vertical belongs to the page (scroll/snap) — pan the map
-      // horizontally only; mouse / desktop pans freely in both axes
-      var vScroll = ev.pointerType === 'touch' && window.innerWidth <= 820;
-      self.pan.x += dx;
-      if (!vScroll) self.pan.y += dy;
+      // mobile touch at fit-zoom: leave the gesture to the page (scroll/snap) and don't
+      // move the map. Once zoomed in, the map owns one-finger panning in both axes.
+      if (ev.pointerType === 'touch' && window.innerWidth <= 820 && self.zoom <= 1.02) return;
+      self.pan.x += dx; self.pan.y += dy;
       // track a smoothed release velocity (px/frame) for inertia
       self._vx = dx * 0.65 + (self._vx || 0) * 0.35;
-      self._vy = vScroll ? 0 : (dy * 0.65 + (self._vy || 0) * 0.35);
+      self._vy = dy * 0.65 + (self._vy || 0) * 0.35;
       self._lastMoveT = Date.now();
       self.clampPan(); self.dirty = true; self.render();
     });
@@ -650,9 +649,8 @@
       self._panelUserToggled = true;
       setState(!card.classList.contains('is-collapsed'));
     });
-    // mobile: start collapsed so the map fills the screen; a pin tap (or the tab)
-    // slides the standings out from the right
-    if (window.innerWidth <= 820) setState(true);
+    // standings are shown by default (desktop and mobile); the tab collapses them
+    // to reveal the full-screen map underneath
   };
 
   // ---- label filter (replaces the old legend) ----
@@ -787,6 +785,9 @@
       self._raf = null;
       if (!self.dirty) return;
       self.dirty = false;
+      // when zoomed in, the map captures touch (pan both axes); at fit-zoom it
+      // releases the vertical gesture so the page can scroll/snap
+      if (self.el.map) self.el.map.classList.toggle('is-zoomed', self.zoom > 1.02);
       self.drawLand();
       self.renderPins();
     });

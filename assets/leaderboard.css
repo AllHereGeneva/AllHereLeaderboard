@@ -842,12 +842,13 @@
     position: relative;
     height: 100dvh;
   }
-  /* map keeps the base absolute inset:0 (fills the whole screen). One finger:
-     horizontal pans the map, vertical scrolls between screens; two fingers zoom. */
+  /* map fills the screen. At fit-zoom, a vertical swipe scrolls/snaps the page
+     (pan-y); two fingers zoom. Once zoomed in, the map owns every gesture (none). */
   .ahl__map { touch-action: pan-y; }
+  .ahl__map.is-zoomed { touch-action: none; }
   .ahl__listcard {
     top: 12px; right: 12px; bottom: 12px; left: auto;
-    width: min(320px, 86vw);
+    width: min(270px, 74vw);
     max-width: none; height: auto; max-height: none;
     margin: 0;
     border-radius: 16px;
