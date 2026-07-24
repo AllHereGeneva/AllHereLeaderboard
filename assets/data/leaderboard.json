@@ -2,7 +2,7 @@
   "meta": {
     "title": "The Gathering of Meditators",
     "unit": "CMI",
-    "scaleMax": 5733.8,
+    "scaleMax": 336,
     "updated": "2026-07-18"
   },
   "entries": [
@@ -63,49 +63,7 @@
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 5733.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 4198.0,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Los Angeles",
-      "country": "United States",
-      "cmi": 3845.5,
-      "lat": 34.0522,
-      "lon": -118.2437
-    },
-    {
-      "city": "Bylakuppe",
-      "country": "India",
-      "cmi": 3027.9,
-      "lat": 12.4239,
-      "lon": 75.9739
-    },
-    {
-      "city": "Los Angeles",
-      "country": "United States",
-      "cmi": 2698.8,
-      "lat": 34.0522,
-      "lon": -118.2437
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 386.5,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 312.9,
+      "cmi": 279.3,
       "lat": 46.2044,
       "lon": 6.1432
     },
@@ -115,20 +73,6 @@
       "cmi": 269.0,
       "lat": 37.7749,
       "lon": -122.4194
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 268.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 258.1,
-      "lat": 35.6895,
-      "lon": 139.6917
     },
     {
       "city": "Tokyo",
@@ -145,39 +89,18 @@
       "lon": 139.5466
     },
     {
-      "city": "Los Angeles",
-      "country": "United States",
-      "cmi": 249.4,
-      "lat": 34.0522,
-      "lon": -118.2437
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 248.0,
+      "lat": 51.752,
+      "lon": -1.2577
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 246.6,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Bylakuppe",
+      "city": "Sera Jey",
       "country": "India",
       "cmi": 246.6,
       "lat": 12.4239,
       "lon": 75.9739
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 244.9,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 241.2,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "Tokyo",
@@ -187,11 +110,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Bengaluru",
+      "city": "Sera Jey",
       "country": "India",
-      "cmi": 235.6,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "cmi": 233.3,
+      "lat": 12.4239,
+      "lon": 75.9739
     },
     {
       "city": "Tokyo",
@@ -210,6 +133,13 @@
     {
       "city": "Bengaluru",
       "country": "India",
+      "cmi": 229.2,
+      "lat": 12.9716,
+      "lon": 77.5946
+    },
+    {
+      "city": "Bengaluru",
+      "country": "India",
       "cmi": 228.3,
       "lat": 12.9716,
       "lon": 77.5946
@@ -222,11 +152,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Oxford",
-      "country": "United Kingdom",
-      "cmi": 227.7,
-      "lat": 51.752,
-      "lon": -1.2577
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 227.3,
+      "lat": 35.6895,
+      "lon": 139.6917
     },
     {
       "city": "Oxford",
@@ -236,53 +166,11 @@
       "lon": -1.2577
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 226.3,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 225.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 225.8,
       "lat": 35.3192,
       "lon": 139.5466
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 225.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 220.9,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 220.6,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 219.9,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "Bengaluru",
@@ -292,11 +180,11 @@
       "lon": 77.5946
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 215.7,
-      "lat": 17.385,
-      "lon": 78.4867
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 217.0,
+      "lat": 35.6895,
+      "lon": 139.6917
     },
     {
       "city": "Tokyo",
@@ -313,27 +201,6 @@
       "lon": -122.4194
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 212.3,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 212.0,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 211.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 207.2,
@@ -346,34 +213,6 @@
       "cmi": 206.0,
       "lat": 35.3192,
       "lon": 139.5466
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 206.0,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 205.7,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 205.3,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 203.3,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "San Francisco",
@@ -397,34 +236,6 @@
       "lon": -122.4194
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 197.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 196.6,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 196.6,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 196.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 195.2,
@@ -439,53 +250,11 @@
       "lon": 77.5946
     },
     {
-      "city": "Basel",
-      "country": "Switzerland",
-      "cmi": 194.4,
-      "lat": 47.5596,
-      "lon": 7.5886
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 192.6,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 191.3,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 191.3,
       "lat": 35.6895,
       "lon": 139.6917
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 191.1,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 190.7,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 190.0,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "Tokyo",
@@ -495,39 +264,25 @@
       "lon": 139.6917
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 189.1,
-      "lat": 17.385,
-      "lon": 78.4867
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 187.0,
+      "lat": 35.6895,
+      "lon": 139.6917
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 188.9,
+      "cmi": 185.7,
       "lat": 46.2044,
       "lon": 6.1432
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 188.0,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 186.9,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 186.4,
-      "lat": 46.2044,
-      "lon": 6.1432
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 185.7,
+      "lat": 51.752,
+      "lon": -1.2577
     },
     {
       "city": "Tokyo",
@@ -537,11 +292,25 @@
       "lon": 139.6917
     },
     {
+      "city": "Geneva",
+      "country": "Switzerland",
+      "cmi": 185.1,
+      "lat": 46.2044,
+      "lon": 6.1432
+    },
+    {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 184.5,
       "lat": 35.3192,
       "lon": 139.5466
+    },
+    {
+      "city": "Basel",
+      "country": "Switzerland",
+      "cmi": 184.5,
+      "lat": 47.5596,
+      "lon": 7.5886
     },
     {
       "city": "Tokyo",
@@ -551,51 +320,16 @@
       "lon": 139.6917
     },
     {
-      "city": "Bylakuppe",
+      "city": "Sera Jey",
       "country": "India",
       "cmi": 183.7,
       "lat": 12.4239,
       "lon": 75.9739
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 182.9,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 182.9,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 181.6,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 181.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 180.8,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 179.4,
       "lat": 35.6895,
       "lon": 139.6917
     },
@@ -607,74 +341,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 178.9,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 178.4,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 178.3,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 178.1,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 177.7,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 176.7,
       "lat": 37.7749,
       "lon": -122.4194
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 176.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 175.9,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 175.4,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 175.4,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "Tokyo",
@@ -691,13 +362,6 @@
       "lon": 139.6917
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 173.7,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 172.8,
@@ -708,13 +372,6 @@
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 172.7,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 172.5,
       "lat": 35.6895,
       "lon": 139.6917
     },
@@ -740,39 +397,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 171.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 170.6,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 170.4,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 169.6,
       "lat": 35.6895,
       "lon": 139.6917
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 169.5,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "Bengaluru",
@@ -784,23 +413,16 @@
     {
       "city": "Tokyo",
       "country": "Japan",
-      "cmi": 166.8,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
       "cmi": 166.7,
       "lat": 35.6895,
       "lon": 139.6917
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 165.9,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "San Francisco",
+      "country": "United States",
+      "cmi": 166.5,
+      "lat": 37.7749,
+      "lon": -122.4194
     },
     {
       "city": "Bengaluru",
@@ -824,23 +446,16 @@
       "lon": 139.5466
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 164.8,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 163.9,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "San Francisco",
+      "country": "United States",
+      "cmi": 162.8,
+      "lat": 37.7749,
+      "lon": -122.4194
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 162.5,
+      "cmi": 162.7,
       "lat": 46.2044,
       "lon": 6.1432
     },
@@ -854,44 +469,30 @@
     {
       "city": "Bengaluru",
       "country": "India",
-      "cmi": 161.9,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
       "cmi": 161.2,
       "lat": 12.9716,
       "lon": 77.5946
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 160.5,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 159.7,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 156.9,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
       "city": "Bengaluru",
       "country": "India",
-      "cmi": 156.9,
+      "cmi": 157.3,
       "lat": 12.9716,
       "lon": 77.5946
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 156.9,
+      "lat": 35.6895,
+      "lon": 139.6917
+    },
+    {
+      "city": "Geneva",
+      "country": "Switzerland",
+      "cmi": 156.6,
+      "lat": 46.2044,
+      "lon": 6.1432
     },
     {
       "city": "Tokyo",
@@ -908,13 +509,6 @@
       "lon": -122.4194
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 156.0,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 155.9,
@@ -929,20 +523,6 @@
       "lon": 139.6917
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 155.4,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 154.7,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 152.7,
@@ -952,37 +532,23 @@
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 152.6,
+      "cmi": 151.1,
       "lat": 46.2044,
       "lon": 6.1432
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 151.6,
-      "lat": 46.2044,
-      "lon": 6.1432
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 151.0,
+      "lat": 51.752,
+      "lon": -1.2577
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 151.6,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 150.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
+      "city": "San Francisco",
+      "country": "United States",
       "cmi": 150.7,
-      "lat": 35.6895,
-      "lon": 139.6917
+      "lat": 37.7749,
+      "lon": -122.4194
     },
     {
       "city": "Tokyo",
@@ -992,27 +558,6 @@
       "lon": 139.6917
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 148.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 148.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 147.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 147.2,
@@ -1020,25 +565,18 @@
       "lon": 139.6917
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 147.0,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "Kamakura",
+      "country": "Japan",
+      "cmi": 146.5,
+      "lat": 35.3192,
+      "lon": 139.5466
     },
     {
-      "city": "Geneva",
+      "city": "Basel",
       "country": "Switzerland",
-      "cmi": 145.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 145.2,
-      "lat": 46.2044,
-      "lon": 6.1432
+      "cmi": 144.0,
+      "lat": 47.5596,
+      "lon": 7.5886
     },
     {
       "city": "Tokyo",
@@ -1048,13 +586,6 @@
       "lon": 139.6917
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 143.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 141.2,
@@ -1062,32 +593,18 @@
       "lon": 77.5946
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 140.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 140.6,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Basel",
-      "country": "Switzerland",
-      "cmi": 140.5,
-      "lat": 47.5596,
-      "lon": 7.5886
-    },
-    {
-      "city": "Bylakuppe",
+      "city": "Sera Jey",
       "country": "India",
       "cmi": 140.1,
       "lat": 12.4239,
       "lon": 75.9739
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 140.0,
+      "lat": 35.6895,
+      "lon": 139.6917
     },
     {
       "city": "Tokyo",
@@ -1097,11 +614,25 @@
       "lon": 139.6917
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 136.8,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 138.0,
+      "lat": 51.752,
+      "lon": -1.2577
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "cmi": 137.8,
+      "lat": 35.6895,
+      "lon": 139.6917
+    },
+    {
+      "city": "Geneva",
+      "country": "Switzerland",
+      "cmi": 136.7,
+      "lat": 46.2044,
+      "lon": 6.1432
     },
     {
       "city": "Tokyo",
@@ -1118,16 +649,23 @@
       "lon": -122.4194
     },
     {
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 135.5,
+      "lat": 51.752,
+      "lon": -1.2577
+    },
+    {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 135.8,
+      "cmi": 134.7,
       "lat": 46.2044,
       "lon": 6.1432
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 133.8,
+      "cmi": 134.5,
       "lat": 46.2044,
       "lon": 6.1432
     },
@@ -1139,13 +677,6 @@
       "lon": -122.4194
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 131.9,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 131.3,
@@ -1153,11 +684,11 @@
       "lon": 77.5946
     },
     {
-      "city": "Tokyo",
+      "city": "Kamakura",
       "country": "Japan",
-      "cmi": 130.2,
-      "lat": 35.6895,
-      "lon": 139.6917
+      "cmi": 130.9,
+      "lat": 35.3192,
+      "lon": 139.5466
     },
     {
       "city": "San Francisco",
@@ -1167,18 +698,18 @@
       "lon": -122.4194
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 128.1,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "Geneva",
+      "country": "Switzerland",
+      "cmi": 128.6,
+      "lat": 46.2044,
+      "lon": 6.1432
     },
     {
-      "city": "Hyderabad",
+      "city": "Bengaluru",
       "country": "India",
-      "cmi": 127.9,
-      "lat": 17.385,
-      "lon": 78.4867
+      "cmi": 128.0,
+      "lat": 12.9716,
+      "lon": 77.5946
     },
     {
       "city": "Tokyo",
@@ -1195,25 +726,11 @@
       "lon": 77.5946
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 124.7,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 123.3,
+      "cmi": 124.1,
       "lat": 46.2044,
       "lon": 6.1432
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 121.0,
-      "lat": 35.6895,
-      "lon": 139.6917
     },
     {
       "city": "Tokyo",
@@ -1223,30 +740,16 @@
       "lon": 139.6917
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 120.4,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Los Angeles",
-      "country": "United States",
-      "cmi": 120.1,
-      "lat": 34.0522,
-      "lon": -118.2437
-    },
-    {
-      "city": "Basel",
+      "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 120.0,
-      "lat": 47.5596,
-      "lon": 7.5886
+      "cmi": 119.2,
+      "lat": 46.2044,
+      "lon": 6.1432
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 117.5,
+      "cmi": 116.3,
       "lat": 46.2044,
       "lon": 6.1432
     },
@@ -1258,20 +761,6 @@
       "lon": 77.5946
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 115.7,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 115.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 114.7,
@@ -1279,25 +768,18 @@
       "lon": 77.5946
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 114.5,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 114.4,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 114.0,
       "lat": 35.6895,
       "lon": 139.6917
+    },
+    {
+      "city": "Sera Jey",
+      "country": "India",
+      "cmi": 113.8,
+      "lat": 12.4239,
+      "lon": 75.9739
     },
     {
       "city": "Kamakura",
@@ -1309,37 +791,9 @@
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 112.5,
+      "cmi": 109.2,
       "lat": 46.2044,
       "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 110.9,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 110.2,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 109.8,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 109.5,
-      "lat": 17.385,
-      "lon": 78.4867
     },
     {
       "city": "San Francisco",
@@ -1347,27 +801,6 @@
       "cmi": 107.2,
       "lat": 37.7749,
       "lon": -122.4194
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 107.1,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Los Angeles",
-      "country": "United States",
-      "cmi": 107.0,
-      "lat": 34.0522,
-      "lon": -118.2437
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 107.0,
-      "lat": 35.6895,
-      "lon": 139.6917
     },
     {
       "city": "Tokyo",
@@ -1384,39 +817,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 105.4,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 105.2,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 102.9,
+      "cmi": 100.4,
       "lat": 46.2044,
       "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 102.4,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 102.2,
-      "lat": 17.385,
-      "lon": 78.4867
     },
     {
       "city": "Kamakura",
@@ -1426,37 +831,23 @@
       "lon": 139.5466
     },
     {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 97.9,
-      "lat": 17.385,
-      "lon": 78.4867
+      "city": "San Francisco",
+      "country": "United States",
+      "cmi": 93.9,
+      "lat": 37.7749,
+      "lon": -122.4194
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 97.6,
+      "cmi": 93.5,
       "lat": 46.2044,
       "lon": 6.1432
     },
     {
-      "city": "Tokyo",
-      "country": "Japan",
-      "cmi": 92.6,
-      "lat": 35.6895,
-      "lon": 139.6917
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 92.5,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
       "city": "Basel",
       "country": "Switzerland",
-      "cmi": 92.1,
+      "cmi": 93.0,
       "lat": 47.5596,
       "lon": 7.5886
     },
@@ -1475,13 +866,6 @@
       "lon": 139.6917
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 83.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 81.6,
@@ -1498,58 +882,23 @@
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 79.3,
+      "cmi": 77.4,
       "lat": 46.2044,
       "lon": 6.1432
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 78.0,
-      "lat": 46.2044,
-      "lon": 6.1432
+      "city": "Oxford",
+      "country": "United Kingdom",
+      "cmi": 76.4,
+      "lat": 51.752,
+      "lon": -1.2577
     },
     {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 76.5,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 76.1,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 74.4,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 72.0,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 71.3,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 70.3,
-      "lat": 12.9716,
-      "lon": 77.5946
+      "city": "San Francisco",
+      "country": "United States",
+      "cmi": 76.4,
+      "lat": 37.7749,
+      "lon": -122.4194
     },
     {
       "city": "Tokyo",
@@ -1559,46 +908,11 @@
       "lon": 139.6917
     },
     {
-      "city": "Bengaluru",
-      "country": "India",
-      "cmi": 65.5,
-      "lat": 12.9716,
-      "lon": 77.5946
-    },
-    {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 59.2,
       "lat": 51.752,
       "lon": -1.2577
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 57.2,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 54.1,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 49.6,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 43.2,
-      "lat": 46.2044,
-      "lon": 6.1432
     },
     {
       "city": "San Francisco",
@@ -1610,30 +924,9 @@
     {
       "city": "Geneva",
       "country": "Switzerland",
-      "cmi": 40.9,
+      "cmi": 32.3,
       "lat": 46.2044,
       "lon": 6.1432
-    },
-    {
-      "city": "Hyderabad",
-      "country": "India",
-      "cmi": 26.7,
-      "lat": 17.385,
-      "lon": 78.4867
-    },
-    {
-      "city": "Geneva",
-      "country": "Switzerland",
-      "cmi": 19.8,
-      "lat": 46.2044,
-      "lon": 6.1432
-    },
-    {
-      "city": "Oxford",
-      "country": "United Kingdom",
-      "cmi": 18.5,
-      "lat": 51.752,
-      "lon": -1.2577
     }
   ]
 }

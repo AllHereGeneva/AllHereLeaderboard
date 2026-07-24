@@ -1,6 +1,7 @@
 # PRIVATE — never publish source EEG data or the source↔entry concordance
 # (anchored to repo root so the PUBLIC assets/data/*.json is still published)
 /data/
+/data2/
 /build/
 
 # local tooling / OS cruft
