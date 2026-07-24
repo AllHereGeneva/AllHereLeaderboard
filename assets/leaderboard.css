@@ -579,14 +579,13 @@
 
 .ahl__row {
   display: grid;
-  grid-template-columns: 1fr auto;   /* right-justified: name block, then score */
+  grid-template-columns: 34px 1fr auto;
   align-items: center;
   gap: 12px;
-  padding: 8px 10px;
+  padding: 9px 10px;
   border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
-  text-align: right;
   transition: background .16s ease, border-color .16s ease, opacity .16s ease;
 }
 .ahl__row + .ahl__row { margin-top: 2px; }
@@ -606,8 +605,8 @@
 .ahl__rank {
   font-family: var(--ahl-font-display);
   font-weight: 600;
-  font-size: 0.92em;
-  margin-right: 7px;
+  font-size: 1.05rem;
+  text-align: center;
   color: var(--ahl-text-dim);
 }
 .ahl__row.rank-1 .ahl__rank { color: var(--ahl-gold); }
@@ -620,10 +619,10 @@
 
 .ahl__place { min-width: 0; }
 .ahl__city { font-weight: 600; font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ahl__meta { font-size: 11px; color: var(--ahl-text-dim); display: flex; justify-content: flex-end; gap: 8px; margin-top: 2px; }
+.ahl__meta { font-size: 11px; color: var(--ahl-text-dim); display: flex; gap: 8px; margin-top: 2px; }
 .ahl__meta .ahl__flag { font-size: 12px; }
 
-.ahl__score { text-align: right; min-width: 64px; }
+.ahl__score { text-align: right; min-width: 72px; }
 .ahl__cmi { font-family: var(--ahl-font-display); font-weight: 600; font-size: 1.15rem; line-height: 1; }
 .ahl__bar { height: 4px; border-radius: 3px; background: rgba(255,255,255,.09); margin-top: 6px; overflow: hidden; }
 .ahl__bar > i {
@@ -837,29 +836,28 @@
   .ahl__scrollcue-chev { font-size: 22px; line-height: .6; }
   .ahl__wrap.is-scrolled .ahl__scrollcue { opacity: 0; pointer-events: none; }
 
-  /* Screen 2 — the map FILLS the viewport; standings is a retractable right panel */
+  /* Screen 2 — map fills the TOP ~2/3, scrollable list below it */
   .ahl__stage {
     scroll-snap-align: start;
-    position: relative;
-    height: 100dvh;
+    display: flex; flex-direction: column;
+    height: 100dvh; position: static;
   }
-  /* map fills the screen. At fit-zoom, a vertical swipe scrolls/snaps the page
-     (pan-y); two fingers zoom. Once zoomed in, the map owns every gesture (none). */
-  .ahl__map { touch-action: pan-y; }
-  .ahl__map.is-zoomed { touch-action: none; }
-  /* a compact translucent panel anchored BOTTOM-RIGHT (~half height): readable on
-     the right, fades toward the top-left so the map stays open above and to the left */
+  .ahl__map {
+    position: relative; inset: auto;
+    flex: 0 0 66dvh; height: auto;
+    touch-action: pan-y;               /* fit-zoom: vertical scrolls/snaps page; 2 fingers zoom */
+  }
+  .ahl__map.is-zoomed { touch-action: none; }   /* zoomed: map owns every gesture */
   .ahl__listcard {
-    top: auto; right: 0; bottom: 0; left: auto;
-    width: min(272px, 78vw);
-    height: 52dvh; max-width: none; max-height: 52dvh;
-    margin: 0;
-    border: none; border-radius: 0; box-shadow: none;
-    background: linear-gradient(to left, rgba(5,15,35,0.92) 0%, rgba(5,15,35,0.82) 52%, rgba(5,15,35,0) 100%);
+    flex: 1 1 auto; min-height: 0;
+    position: static; inset: auto; transform: none;
+    width: auto; max-width: none; height: auto; max-height: none;
+    margin: 0; border: none; border-radius: 0; box-shadow: none;
+    background: rgba(9, 17, 40, 0.72);
     backdrop-filter: none; -webkit-backdrop-filter: none;
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, #000 40px);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0, #000 40px);
-    padding: 8px 14px 8px 26px;
+    -webkit-mask-image: none; mask-image: none;
+    padding: 12px 12px 4px 14px;
+    display: flex; flex-direction: column;
   }
   .ahl__rows {
     flex: 1 1 auto; min-height: 0; max-height: none;
@@ -867,7 +865,7 @@
   }
   .ahl__list-title { font-size: 0.95rem; }
   .ahl__list-sub { font-size: 10.5px; margin-bottom: 10px; }
-  .ahl__toggle { display: flex; }   /* retractable tab, as on desktop */
+  .ahl__toggle { display: none; }   /* in-flow list below the map: no retract tab */
 
   .ahl__foot { padding: 10px 16px; scroll-snap-align: start; }
   .ahl__foot-main { gap: 12px 28px; }
@@ -940,7 +938,7 @@
   .ahl__foot-bar { flex-direction: column; gap: 4px; text-align: center; }
 
   /* compact standings rows — right-justified: name block + score */
-  .ahl__row { grid-template-columns: 1fr auto; gap: 8px; padding: 6px 8px; align-items: center; }
+  .ahl__row { grid-template-columns: 28px 1fr auto; gap: 8px; padding: 7px 8px; align-items: center; }
   .ahl__row + .ahl__row { margin-top: 1px; }
   .ahl__rank { font-size: 0.85rem; }
   .ahl__place { min-width: 0; }

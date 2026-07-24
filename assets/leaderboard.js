@@ -390,8 +390,9 @@
       var who = e.vip ? e.vip.name : (e.dbg || 'Participant ' + e.rank);   // e.dbg = TEMP debug filename
       var stateCls = fActive ? (self.entryMatches(e) ? ' is-match' : ' is-dim') : '';
       return '<div class="ahl__row' + rankCls + stateCls + '" data-id="' + e.id + '" role="button" tabindex="0">' +
+        '<div class="ahl__rank">' + e.rank + '</div>' +
         '<div class="ahl__place">' +
-          '<div class="ahl__city"><span class="ahl__rank">' + e.rank + '</span>' + esc(who) + '</div>' +
+          '<div class="ahl__city">' + esc(who) + '</div>' +
           '<div class="ahl__meta"><span>' + esc(e.city) + ', ' + esc(e.country) + '</span></div>' +
         '</div>' +
         '<div class="ahl__score"><div class="ahl__cmi">' + fmtInt(e.cmi) + '</div></div>' +
