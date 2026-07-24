@@ -390,14 +390,11 @@
       var who = e.vip ? e.vip.name : (e.dbg || 'Participant ' + e.rank);   // e.dbg = TEMP debug filename
       var stateCls = fActive ? (self.entryMatches(e) ? ' is-match' : ' is-dim') : '';
       return '<div class="ahl__row' + rankCls + stateCls + '" data-id="' + e.id + '" role="button" tabindex="0">' +
-        '<div class="ahl__rank">' + e.rank + '</div>' +
         '<div class="ahl__place">' +
-          '<div class="ahl__city">' + esc(who) + '</div>' +
-          '<div class="ahl__meta"><span>' + esc(e.city) + ', ' + esc(e.country) + '</span><span>' + fmtDate(e.date) + '</span></div>' +
+          '<div class="ahl__city"><span class="ahl__rank">' + e.rank + '</span>' + esc(who) + '</div>' +
+          '<div class="ahl__meta"><span>' + esc(e.city) + ', ' + esc(e.country) + '</span></div>' +
         '</div>' +
-        '<div class="ahl__score">' +
-          '<div class="ahl__cmi">' + fmtInt(e.cmi) + '</div>' +
-        '</div>' +
+        '<div class="ahl__score"><div class="ahl__cmi">' + fmtInt(e.cmi) + '</div></div>' +
       '</div>';
     }).join('');
 
@@ -451,12 +448,11 @@
     var rect = this.el.map.getBoundingClientRect();
     if (!rect.width) return;
     this.cw = rect.width; this.ch = rect.height;
-    // fit whole world at zoom 1 (letterbox)
-    if (this.cw / this.ch > WORLD_ASPECT) {
-      this.worldH = this.ch; this.worldW = this.ch * WORLD_ASPECT;
-    } else {
-      this.worldW = this.cw; this.worldH = this.cw / WORLD_ASPECT;
-    }
+    // Always FILL the map's height. The world wraps horizontally (infinite pan),
+    // so there is never a vertical letterbox: on a wide screen you see the whole
+    // world; on a tall phone you see a full-height slice and pan sideways.
+    this.worldH = this.ch;
+    this.worldW = this.ch * WORLD_ASPECT;
     this.dpr = Math.min(window.devicePixelRatio || 1, 2);
     this.el.canvas.width = Math.round(this.cw * this.dpr);
     this.el.canvas.height = Math.round(this.ch * this.dpr);
@@ -551,13 +547,14 @@
         return;
       }
       if (Math.abs(dx) + Math.abs(dy) > 2) self._moved = true;
-      // mobile touch at fit-zoom: leave the gesture to the page (scroll/snap) and don't
-      // move the map. Once zoomed in, the map owns one-finger panning in both axes.
-      if (ev.pointerType === 'touch' && window.innerWidth <= 820 && self.zoom <= 1.02) return;
-      self.pan.x += dx; self.pan.y += dy;
+      // mobile touch at fit-zoom: pan the globe HORIZONTALLY (it wraps); the vertical
+      // gesture belongs to the page (scroll/snap). Once zoomed in, the map owns both axes.
+      var fitTouch = ev.pointerType === 'touch' && window.innerWidth <= 820 && self.zoom <= 1.02;
+      self.pan.x += dx;
+      if (!fitTouch) self.pan.y += dy;
       // track a smoothed release velocity (px/frame) for inertia
       self._vx = dx * 0.65 + (self._vx || 0) * 0.35;
-      self._vy = dy * 0.65 + (self._vy || 0) * 0.35;
+      self._vy = fitTouch ? 0 : (dy * 0.65 + (self._vy || 0) * 0.35);
       self._lastMoveT = Date.now();
       self.clampPan(); self.dirty = true; self.render();
     });

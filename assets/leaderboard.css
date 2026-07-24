@@ -579,13 +579,14 @@
 
 .ahl__row {
   display: grid;
-  grid-template-columns: 34px 1fr auto;
+  grid-template-columns: 1fr auto;   /* right-justified: name block, then score */
   align-items: center;
   gap: 12px;
-  padding: 10px 10px;
-  border-radius: 12px;
+  padding: 8px 10px;
+  border-radius: 10px;
   border: 1px solid transparent;
   cursor: pointer;
+  text-align: right;
   transition: background .16s ease, border-color .16s ease, opacity .16s ease;
 }
 .ahl__row + .ahl__row { margin-top: 2px; }
@@ -605,8 +606,8 @@
 .ahl__rank {
   font-family: var(--ahl-font-display);
   font-weight: 600;
-  font-size: 1.05rem;
-  text-align: center;
+  font-size: 0.92em;
+  margin-right: 7px;
   color: var(--ahl-text-dim);
 }
 .ahl__row.rank-1 .ahl__rank { color: var(--ahl-gold); }
@@ -619,10 +620,10 @@
 
 .ahl__place { min-width: 0; }
 .ahl__city { font-weight: 600; font-size: 14.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.ahl__meta { font-size: 11px; color: var(--ahl-text-dim); display: flex; gap: 8px; margin-top: 2px; }
+.ahl__meta { font-size: 11px; color: var(--ahl-text-dim); display: flex; justify-content: flex-end; gap: 8px; margin-top: 2px; }
 .ahl__meta .ahl__flag { font-size: 12px; }
 
-.ahl__score { text-align: right; min-width: 96px; }
+.ahl__score { text-align: right; min-width: 64px; }
 .ahl__cmi { font-family: var(--ahl-font-display); font-weight: 600; font-size: 1.15rem; line-height: 1; }
 .ahl__bar { height: 4px; border-radius: 3px; background: rgba(255,255,255,.09); margin-top: 6px; overflow: hidden; }
 .ahl__bar > i {
@@ -846,13 +847,17 @@
      (pan-y); two fingers zoom. Once zoomed in, the map owns every gesture (none). */
   .ahl__map { touch-action: pan-y; }
   .ahl__map.is-zoomed { touch-action: none; }
+  /* right-edge scrim instead of a solid card: readable on the right, fades to
+     transparent on the left so the map stays visible/usable behind the list */
   .ahl__listcard {
-    top: 12px; right: 12px; bottom: 12px; left: auto;
-    width: min(270px, 74vw);
+    top: 0; right: 0; bottom: 0; left: auto;
+    width: min(272px, 78vw);
     max-width: none; height: auto; max-height: none;
     margin: 0;
-    border-radius: 16px;
-    padding: 16px 8px 10px 16px;
+    border: none; border-radius: 0; box-shadow: none;
+    background: linear-gradient(to left, rgba(5,15,35,0.92) 0%, rgba(5,15,35,0.82) 52%, rgba(5,15,35,0) 100%);
+    backdrop-filter: none; -webkit-backdrop-filter: none;
+    padding: 16px 14px 8px 26px;
   }
   .ahl__rows {
     flex: 1 1 auto; min-height: 0; max-height: none;
@@ -932,9 +937,8 @@
   .ahl__foot-col { align-items: center; }
   .ahl__foot-bar { flex-direction: column; gap: 4px; text-align: center; }
 
-  /* compact standings rows — smaller type, less height per line */
-  /* compact standings rows — smaller type, one-line meta, less height per row */
-  .ahl__row { grid-template-columns: 22px 1fr auto; gap: 8px; padding: 5px 8px; align-items: center; }
+  /* compact standings rows — right-justified: name block + score */
+  .ahl__row { grid-template-columns: 1fr auto; gap: 8px; padding: 6px 8px; align-items: center; }
   .ahl__row + .ahl__row { margin-top: 1px; }
   .ahl__rank { font-size: 0.85rem; }
   .ahl__place { min-width: 0; }
