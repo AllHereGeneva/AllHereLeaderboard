@@ -323,19 +323,40 @@
 .ahl__pin.is-sub:hover .ahl__pin-dot,
 .ahl__pin.is-sub.is-active .ahl__pin-dot { background: var(--ahl-accent); transform: scale(1.28); }
 
-/* VIP marker: gold ring + star badge (coexists with podium dot colours) */
+/* bio-performer marker: a gold ring (distinct design; clusters like any pin) */
 .ahl__pin.is-vip .ahl__pin-dot {
   box-shadow: 0 0 0 2px var(--ahl-bg), 0 0 0 4px var(--ahl-accent), 0 2px 8px rgba(0,0,0,.55);
 }
-.ahl__pin.is-vip::before {
+/* top-3: the star badge, always solo on the map (coexists with podium dot colours) */
+.ahl__pin.is-top::before {
   content: "★";
   position: absolute; left: 50%; top: 50%;
-  transform: translate(4px, -15px);
-  font-size: 11px; line-height: 1;
+  transform: translate(4px, -16px);
+  font-size: 12px; line-height: 1;
   color: var(--ahl-accent);
   text-shadow: 0 1px 2px rgba(0,0,0,.7);
   pointer-events: none;
 }
+
+/* dataset toggle (segmented pill, top-left of the map) */
+.ahl__dataset {
+  position: absolute; z-index: 6; top: 14px; left: 14px;
+  display: inline-flex; padding: 3px;
+  background: rgba(9, 17, 40, 0.64);
+  border: 1px solid var(--ahl-border-strong);
+  border-radius: 999px;
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+.ahl__ds-btn {
+  font-family: var(--ahl-font-display);
+  font-size: 11px; font-weight: 600; letter-spacing: .06em;
+  color: var(--ahl-text-dim);
+  background: transparent; border: none; cursor: pointer;
+  padding: 6px 13px; border-radius: 999px;
+  transition: background .2s ease, color .2s ease;
+}
+.ahl__ds-btn.is-on { background: var(--ahl-accent); color: #08122b; }
+.ahl__ds-btn:not(.is-on):hover { color: var(--ahl-accent); }
 
 /* label filter: matches pop with a gold glow, non-matches dim */
 .ahl__pin.is-match { z-index: 3; }

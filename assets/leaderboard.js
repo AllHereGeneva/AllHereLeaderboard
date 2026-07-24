@@ -150,19 +150,19 @@
     // the city's grey count-bubble. VIPs get a constant-pixel offset so their
     // profile card is always individually reachable.
     var GA = 2.399963;   // golden angle -> even sunflower packing
-    var VIP_PX = 42;
+    var TOP_PX = 42;     // top-3: constant pixel offset -> always pulled clear of the city + solo
     Object.keys(groups).forEach(function (k) {
       var arr = groups[k];
       arr.forEach(function (e) { e._ox = e._oy = e._rx = e._ry = 0; });
       if (arr.length === 1) return;
-      var ni = 0, vi = 0;
+      var ni = 0, ti = 0;
       arr.forEach(function (e) {
-        if (e.vip) {
-          e._ox = Math.cos(vi * GA) * VIP_PX;
-          e._oy = Math.sin(vi * GA) * VIP_PX;
-          vi++;
-        } else if (e.rank <= 20) {
-          var rr = Math.sqrt(ni + 1);   // +1 so the first gold clears the central grey group
+        if (e.rank <= 3) {
+          e._ox = Math.cos(ti * GA) * TOP_PX;
+          e._oy = Math.sin(ti * GA) * TOP_PX;
+          ti++;
+        } else if (e.vip || e.rank <= 20) {   // bio-performers + top-20 fan out (still clusterable)
+          var rr = Math.sqrt(ni + 1);   // +1 so the first pin clears the central grey group
           e._rx = Math.cos(ni * GA) * rr;
           e._ry = Math.sin(ni * GA) * rr;
           ni++;
@@ -179,18 +179,41 @@
     });
     this.labels = labels;
     this.activeLabels = {};
+    this.pinSel = null;
 
     this.populateHeader(meta);
     this.buildList();
     this.buildFilter();
-    this.bindMap();
-    this.bindPanel();
-    this.bindCard();
+    if (!this._bound) {                 // one-time event wiring (survives dataset swaps)
+      this.bindMap();
+      this.bindPanel();
+      this.bindCard();
+      this._bound = true;
+    }
     this.resize();
+  };
+
+  // swap the active dataset (e.g. Coverage <-> Map Index) without re-binding events
+  AHLeaderboard.prototype.loadDataset = function (url) {
+    var self = this;
+    fetch(url, { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (d) {
+      self.data = d;
+      self.opt.dataUrl = url;
+      self.prepare();          // recompute entries/pins/list; view (zoom/pan) is preserved
+      self.dirty = true;
+      self.render();
+    }).catch(function (err) { self.showError(err); });
   };
 
   // ---- DOM shell ----
   AHLeaderboard.prototype.buildShell = function () {
+    var ds = this.opt.datasets;
+    var dsHtml = (ds && ds.length >= 2)
+      ? '<div class="ahl__dataset" data-ahl="dataset">' + ds.map(function (d, i) {
+          return '<button type="button" class="ahl__ds-btn' + (i === 0 ? ' is-on' : '') +
+            '" data-url="' + d.url + '">' + esc(d.label) + '</button>';
+        }).join('') + '</div>'
+      : '';
     this.root.innerHTML =
       '<div class="ahl__wrap">' +
         '<header class="ahl__head">' +
@@ -225,6 +248,7 @@
           '<div class="ahl__tip" data-ahl="tip"></div>' +
           '<div class="ahl__card-backdrop" data-ahl="cardbg" hidden></div>' +
           '<div class="ahl__card" data-ahl="card" role="dialog" aria-modal="true" aria-label="Participant profile" hidden></div>' +
+          dsHtml +
           '<div class="ahl__filter" data-ahl="filter">' +
             '<button type="button" class="ahl__filter-toggle" data-ahl="filtertoggle" aria-expanded="false">Filter</button>' +
             '<div class="ahl__filter-body">' +
@@ -283,7 +307,7 @@
     this.el = {};
     var self = this;
     ['title', 'subtitle', 'stats', 'map', 'canvas', 'pins', 'tip',
-      'zin', 'zout', 'zreset', 'listtitle', 'listsub', 'selbar', 'rows', 'footer', 'toggle', 'scrollcue',
+      'zin', 'zout', 'zreset', 'listtitle', 'listsub', 'selbar', 'rows', 'footer', 'toggle', 'scrollcue', 'dataset',
       'card', 'cardbg', 'filter', 'filterchips', 'filtertoggle'
     ].forEach(function (k) {
       self.el[k] = self.root.querySelector('[data-ahl="' + k + '"]');
@@ -598,6 +622,15 @@
     if (wrap) wrap.addEventListener('scroll', function () {
       wrap.classList.toggle('is-scrolled', wrap.scrollTop > 30);
     });
+
+    // dataset toggle (e.g. Coverage <-> Map Index)
+    if (this.el.dataset) this.el.dataset.addEventListener('click', function (ev) {
+      var btn = ev.target.closest('.ahl__ds-btn');
+      if (!btn || btn.classList.contains('is-on')) return;
+      Array.prototype.forEach.call(self.el.dataset.children, function (b) { b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      self.loadDataset(btn.getAttribute('data-url'));
+    });
   };
 
   // ---- retractable standings panel ----
@@ -842,13 +875,17 @@
     var clusters = [];
     for (var i = 0; i < pts.length; i++) {
       var p = pts[i], placed = false;
-      for (var c = 0; c < clusters.length; c++) {
-        var cl = clusters[c];
-        if (Math.hypot(p.x - cl.x, p.y - cl.y) <= TH) {
-          cl.items.push(p.e); placed = true; break;
+      var solo = p.e.rank <= 3;                 // top-3 always stand alone (never merged)
+      if (!solo) {
+        for (var c = 0; c < clusters.length; c++) {
+          var cl = clusters[c];
+          if (cl.solo) continue;                // and nothing merges into a top-3's pin
+          if (Math.hypot(p.x - cl.x, p.y - cl.y) <= TH) {
+            cl.items.push(p.e); placed = true; break;
+          }
         }
       }
-      if (!placed) clusters.push({ x: p.x, y: p.y, items: [p.e] });
+      if (!placed) clusters.push({ x: p.x, y: p.y, items: [p.e], solo: solo });
     }
 
     // pool of pin nodes
