@@ -65,868 +65,992 @@
       "country": "Switzerland",
       "cmi": 279.3,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "BK_2"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 269.0,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_07"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 252.4,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_25"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 251.0,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_02"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 248.0,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_07"
     },
     {
       "city": "Sera Jey",
       "country": "India",
       "cmi": 246.6,
       "lat": 12.4239,
-      "lon": 75.9739
+      "lon": 75.9739,
+      "dbg": "SJ_01"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 237.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_36"
     },
     {
       "city": "Sera Jey",
       "country": "India",
       "cmi": 233.3,
       "lat": 12.4239,
-      "lon": 75.9739
+      "lon": 75.9739,
+      "dbg": "SJ_03"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 232.8,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_01"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 232.1,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_41"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 229.2,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_06"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 228.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_10"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 228.1,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_21"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 227.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_48"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 226.6,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_08"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 225.8,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_04"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 218.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_18"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 217.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_13"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 215.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_14"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 213.2,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_06"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 207.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_28"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 206.0,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_07"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 202.2,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_11"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 202.1,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_08"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 199.3,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_09"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 195.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_06"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 194.5,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_14"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 191.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_33"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 190.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_31"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 187.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_08"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 185.7,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "BK_05"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 185.7,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_05"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 185.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_29"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 185.1,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_16"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 184.5,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_12"
     },
     {
       "city": "Basel",
       "country": "Switzerland",
       "cmi": 184.5,
       "lat": 47.5596,
-      "lon": 7.5886
+      "lon": 7.5886,
+      "dbg": "AOL_04"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 184.1,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_23"
     },
     {
       "city": "Sera Jey",
       "country": "India",
       "cmi": 183.7,
       "lat": 12.4239,
-      "lon": 75.9739
+      "lon": 75.9739,
+      "dbg": "SJ_02"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 181.6,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_37"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 179.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_34"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 176.7,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_04"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 175.4,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_03"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 175.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_55"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 172.8,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_17"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 172.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT`_19"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 172.5,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_09"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 172.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_04"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 171.5,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_32"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 169.6,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_27"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 167.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_19"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 166.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_49"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 166.5,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_03"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 165.8,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_07"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 165.3,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_01"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 165.1,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_10"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 162.8,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_08"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 162.7,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_10"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 162.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_15"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 161.2,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_05"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 157.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_09"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 156.9,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_17"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 156.6,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "BK_03"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 156.3,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_26"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 156.2,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF13_concatenated"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 155.9,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_47"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 155.5,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_40"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 152.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_30"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 151.1,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_09"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 151.0,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_12"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 150.7,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_05"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 149.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_10"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 147.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_16"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 146.5,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_03"
     },
     {
       "city": "Basel",
       "country": "Switzerland",
       "cmi": 144.0,
       "lat": 47.5596,
-      "lon": 7.5886
+      "lon": 7.5886,
+      "dbg": "AOL_01"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 143.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_02"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 141.2,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_17"
     },
     {
       "city": "Sera Jey",
       "country": "India",
       "cmi": 140.1,
       "lat": 12.4239,
-      "lon": 75.9739
+      "lon": 75.9739,
+      "dbg": "SJ_04"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 140.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_05"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 138.5,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_18"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 138.0,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_11"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 137.8,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_22"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 136.7,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_12"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 136.7,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_20"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 135.9,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_15"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 135.5,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_09"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 134.7,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_08"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 134.5,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_06"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 133.2,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_02"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 131.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_13"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 130.9,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_01"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 129.3,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_16"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 128.6,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_14"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 128.0,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_15"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 127.5,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_24"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 124.8,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_11"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 124.1,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_05"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 120.9,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_35"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 119.2,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_07"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 116.3,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_13"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 116.3,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_16"
     },
     {
       "city": "Bengaluru",
       "country": "India",
       "cmi": 114.7,
       "lat": 12.9716,
-      "lon": 77.5946
+      "lon": 77.5946,
+      "dbg": "AOL_12"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 114.0,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_56"
     },
     {
       "city": "Sera Jey",
       "country": "India",
       "cmi": 113.8,
       "lat": 12.4239,
-      "lon": 75.9739
+      "lon": 75.9739,
+      "dbg": "SJ_05"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 113.3,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_05"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 109.2,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_04"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 107.2,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_14"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 106.8,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_11"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 106.2,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_50"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 100.4,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_15"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 98.5,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_06"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 93.9,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_10"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 93.5,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_03"
     },
     {
       "city": "Basel",
       "country": "Switzerland",
       "cmi": 93.0,
       "lat": 47.5596,
-      "lon": 7.5886
+      "lon": 7.5886,
+      "dbg": "AOL_03"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 91.8,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_09"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 90.9,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_39"
     },
     {
       "city": "Kamakura",
       "country": "Japan",
       "cmi": 81.6,
       "lat": 35.3192,
-      "lon": 139.5466
+      "lon": 139.5466,
+      "dbg": "JK_08"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 81.5,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_42"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 77.4,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_02"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 76.4,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_06"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 76.4,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_01"
     },
     {
       "city": "Tokyo",
       "country": "Japan",
       "cmi": 66.6,
       "lat": 35.6895,
-      "lon": 139.6917
+      "lon": 139.6917,
+      "dbg": "JT_38"
     },
     {
       "city": "Oxford",
       "country": "United Kingdom",
       "cmi": 59.2,
       "lat": 51.752,
-      "lon": -1.2577
+      "lon": -1.2577,
+      "dbg": "BK_13"
     },
     {
       "city": "San Francisco",
       "country": "United States",
       "cmi": 41.4,
       "lat": 37.7749,
-      "lon": -122.4194
+      "lon": -122.4194,
+      "dbg": "SF_12"
     },
     {
       "city": "Geneva",
       "country": "Switzerland",
       "cmi": 32.3,
       "lat": 46.2044,
-      "lon": 6.1432
+      "lon": 6.1432,
+      "dbg": "WML_11"
     }
   ]
 }
