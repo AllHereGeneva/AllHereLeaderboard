@@ -208,9 +208,11 @@
   // ---- DOM shell ----
   AHLeaderboard.prototype.buildShell = function () {
     var ds = this.opt.datasets;
+    var curUrl = String(this.opt.dataUrl || '').split('?')[0];   // active dataset = the one loaded
     var dsHtml = (ds && ds.length >= 2)
       ? '<div class="ahl__dataset" data-ahl="dataset">' + ds.map(function (d, i) {
-          return '<button type="button" class="ahl__ds-btn' + (i === 0 ? ' is-on' : '') +
+          var on = d.url === curUrl || (i === 0 && ds.every(function (x) { return x.url !== curUrl; }));
+          return '<button type="button" class="ahl__ds-btn' + (on ? ' is-on' : '') +
             '" data-url="' + d.url + '">' + esc(d.label) + '</button>';
         }).join('') + '</div>'
       : '';
