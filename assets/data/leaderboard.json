@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "The Gathering of Meditators",
+    "title": "QM3 Standings",
     "unit": "CMI",
     "scaleMax": 385,
     "updated": "2026-07-18",
     "count": "400+",
-    "listTitle": "QM3 Standings",
+    "listTitle": "Global Standings",
     "oneDotEach": true,
     "note": "SMI coming up soon.",
     "learnMoreUrl": "https://www.wml.org"
