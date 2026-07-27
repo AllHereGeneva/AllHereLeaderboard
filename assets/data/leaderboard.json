@@ -39,7 +39,7 @@
     { "city": "Kamakura", "country": "Japan", "cmi": 227.2, "lat": 35.3192, "lon": 139.5466 },
     { "city": "", "country": "Germany", "cmi": 223.2, "lat": 52.52, "lon": 13.405 },
     { "city": "", "country": "France", "cmi": 221.0, "lat": 48.8566, "lon": 2.3522 },
-    { "city": "", "country": "Australia", "cmi": 220.4, "lat": -33.8688, "lon": 151.2093 },
+    { "city": "Sydney", "country": "Australia", "cmi": 295.03, "lat": -33.8688, "lon": 151.2093 },
     { "city": "", "country": "Romania", "cmi": 218.1, "lat": 44.4268, "lon": 26.1025 },
     { "city": "", "country": "Brazil", "cmi": 216.0, "lat": -23.5505, "lon": -46.6333 }
   ]
