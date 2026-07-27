@@ -234,7 +234,7 @@
             '<a class="ahl__nav-cta" href="mailto:hello@wml.org">Join the League</a>' +
           '</nav>' +
           '<div class="ahl__hero">' +
-            '<span class="ahl__eyebrow">Global Standings</span>' +
+            '<span class="ahl__eyebrow">QM3 Standings</span>' +
             '<h2 class="ahl__title" data-ahl="title">The Gathering of Meditators</h2>' +
             '<div class="ahl__stats" data-ahl="stats"></div>' +
           '</div>' +
@@ -261,10 +261,10 @@
           '</div>' +
           '<aside class="ahl__listcard">' +
             '<button type="button" class="ahl__toggle" data-ahl="toggle" aria-label="Hide standings" aria-expanded="true">' +
-              '<span class="ahl__toggle-label">Global Standings</span>' +
+              '<span class="ahl__toggle-label">QM3 Standings</span>' +
               '<span class="ahl__toggle-icon" aria-hidden="true">‹</span>' +
             '</button>' +
-            '<h3 class="ahl__list-title" data-ahl="listtitle">Global Standings</h3>' +
+            '<h3 class="ahl__list-title" data-ahl="listtitle">QM3 Standings</h3>' +
             '<p class="ahl__list-sub" data-ahl="listsub"></p>' +
             '<div class="ahl__selbar" data-ahl="selbar" hidden></div>' +
             '<div class="ahl__rows" data-ahl="rows">' +
@@ -326,25 +326,33 @@
 
   AHLeaderboard.prototype.populateHeader = function (meta) {
     if (meta.title) this.el.title.textContent = meta.title;
-    this.el.listtitle.textContent = 'Global Standings';
+    this.el.listtitle.textContent = meta.listTitle || 'QM3 Standings';
 
     var countries = {};
-    this.entries.forEach(function (e) { countries[e.country] = 1; });
+    this.entries.forEach(function (e) { if (e.country) countries[e.country] = 1; });
+    var count = meta.count != null ? String(meta.count) : fmtInt(this.entries.length);   // headline figure, e.g. "400+"
     var stats = [
-      { n: fmtInt(this.entries.length), l: 'Meditators' },
+      { n: count, l: 'Meditators' },
       { n: fmtInt(Object.keys(countries).length), l: 'Countries' }
     ];
     this.el.stats.innerHTML = stats.map(function (s) {
-      return '<div class="ahl__stat"><span class="ahl__stat-num">' + s.n +
+      return '<div class="ahl__stat"><span class="ahl__stat-num">' + esc(s.n) +
         '</span><span class="ahl__stat-label">' + s.l + '</span></div>';
     }).join('');
 
     this.el.listsub.textContent = 'Top ' + this.opt.listTop + ' · ranked by ' + this.unit +
       ' — Concentration & Mindfulness Index (0–' + fmtInt(this.scaleMax) + ')';
-    if (meta.updated) {
-      this.el.footer.innerHTML = '<span>Updated ' + fmtDate(meta.updated) + '</span>' +
-        '<span>' + fmtInt(this.entries.length) + ' meditators worldwide</span>';
-    }
+
+    var note = meta.note
+      ? '<div class="ahl__note">' + esc(meta.note) +
+          (meta.learnMoreUrl ? ' <a class="ahl__learn" href="' + esc(meta.learnMoreUrl) +
+            '" target="_blank" rel="noopener noreferrer">Learn more &rarr;</a>' : '') + '</div>'
+      : '';
+    this.el.footer.innerHTML = note +
+      '<div class="ahl__foot-meta">' +
+        (meta.updated ? '<span>Updated ' + fmtDate(meta.updated) + '</span>' : '') +
+        '<span>' + esc(count) + ' meditators worldwide</span>' +
+      '</div>';
   };
 
   // ---- ranked list ----
@@ -393,7 +401,7 @@
         '<div class="ahl__rank">' + e.rank + '</div>' +
         '<div class="ahl__place">' +
           '<div class="ahl__city">' + esc(who) + '</div>' +
-          '<div class="ahl__meta"><span>' + esc(e.city) + ', ' + esc(e.country) + '</span></div>' +
+          '<div class="ahl__meta"><span>' + esc(e.city ? e.city + ', ' + e.country : e.country) + '</span></div>' +
         '</div>' +
         '<div class="ahl__score"><div class="ahl__cmi">' + fmtInt(e.cmi) + '</div></div>' +
       '</div>';
@@ -873,10 +881,11 @@
     }, this);
 
     // greedy screen-space clustering
+    var oneDot = !!(this.data && this.data.meta && this.data.meta.oneDotEach);
     var clusters = [];
     for (var i = 0; i < pts.length; i++) {
       var p = pts[i], placed = false;
-      var solo = p.e.rank <= 3;                 // top-3 always stand alone (never merged)
+      var solo = oneDot || p.e.rank <= 3;       // top-3 always solo; oneDotEach -> everyone solo (no counts)
       if (!solo) {
         for (var c = 0; c < clusters.length; c++) {
           var cl = clusters[c];
@@ -972,7 +981,7 @@
     } else {
       html = '<div class="ahl__tip-rank">Rank #' + best.rank + '</div>' +
         '<div class="ahl__tip-city">' + esc(best.vip ? best.vip.name : (best.dbg || 'Participant ' + best.rank)) + '</div>' +
-        '<div class="ahl__tip-country">' + esc(best.city) + ', ' + esc(best.country) + '</div>' +
+        '<div class="ahl__tip-country">' + esc(best.city ? best.city + ', ' + best.country : best.country) + '</div>' +
         '<div class="ahl__tip-cmi">' + fmtInt(best.cmi) + ' <small>' + this.unit + '</small></div>' +
         '<div class="ahl__tip-date">' + fmtDate(best.date) + '</div>';
     }

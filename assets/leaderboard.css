@@ -639,8 +639,12 @@
   border-top: 1px solid var(--ahl-border);
   font-size: 11px;
   color: var(--ahl-text-dim);
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  display: flex; flex-direction: column; gap: 8px;
 }
+.ahl__note { font-size: 12px; color: #cdd6e6; letter-spacing: 0.01em; }
+.ahl__learn { color: var(--ahl-accent); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.ahl__learn:hover { text-decoration: underline; }
+.ahl__foot-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
 /* ---------- Footer band (bottom; map sits flush on top of it) ---------- */
 .ahl__foot {

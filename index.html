@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>World Meditation League — The Gathering of Meditators</title>
   <meta name="description" content="World Meditation League — the global Quantified Meditation standings ranked by CMI (Concentration & Mindfulness Index)." />
-  <link rel="stylesheet" href="assets/leaderboard.css?v=3da4b710" />
+  <link rel="stylesheet" href="assets/leaderboard.css?v=f44a59fc" />
   <style>html,body{margin:0;padding:0;background:#050f23;}</style>
 </head>
 <body>
   <!-- Drop this single element into any page. Everything renders inside it. -->
   <section class="ahl" id="cmi-leaderboard"></section>
 
-  <script src="assets/leaderboard.js?v=3da4b710"></script>
+  <script src="assets/leaderboard.js?v=f44a59fc"></script>
   <script>
     window.__ahl = AHLeaderboard.init(document.getElementById('cmi-leaderboard'), {
-      dataUrl: 'assets/data/leaderboard.json?v=66',
+      dataUrl: 'assets/data/leaderboard.json?v=67',
       landUrl: 'assets/data/world-land.json?v=21',
-      gazetteerUrl: 'assets/data/gazetteer.json'
+      gazetteerUrl: 'assets/data/gazetteer.json',
+      listTop: 10
     });
   </script>
 </body>
