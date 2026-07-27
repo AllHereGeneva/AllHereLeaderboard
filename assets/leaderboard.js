@@ -410,8 +410,16 @@
     // hover / focus linking list -> map
     Array.prototype.forEach.call(this.el.rows.querySelectorAll('.ahl__row'), function (row) {
       var id = +row.getAttribute('data-id');
-      row.addEventListener('mouseenter', function () { self.setHighlight(id); });
-      row.addEventListener('mouseleave', function () { self.setHighlight(-1); });
+      row.addEventListener('mouseenter', function () {
+        self.setHighlight(id);
+        var e = self.entries[id];
+        // hovering a bio-performer's row opens their profile card too (desktop)
+        if (e && e.vip && !self._noHover && !self._lastTouch) self.openVipCard(e, self.pinNodeFor(id), true);
+      });
+      row.addEventListener('mouseleave', function () {
+        self.setHighlight(-1);
+        if (self._cardMode === 'hover') self.closeVipCard();
+      });
       row.addEventListener('focus', function () { self.focusEntry(id); });
       row.addEventListener('click', function () { self.focusEntry(id); });
       row.addEventListener('keydown', function (ev) {
@@ -726,6 +734,16 @@
     var b = parts.length > 1 ? parts[parts.length - 1].charAt(0) : '';
     return (a + b).toUpperCase() || '·';
   }
+
+  // find the currently-rendered pin node that contains this entry id (or null)
+  AHLeaderboard.prototype.pinNodeFor = function (id) {
+    var pool = this._pool || [], sid = String(id);
+    for (var i = 0; i < pool.length; i++) {
+      if (pool[i].style.display === 'none') continue;
+      if ((pool[i].dataset.ids || '').split(',').indexOf(sid) >= 0) return pool[i];
+    }
+    return null;
+  };
 
   AHLeaderboard.prototype.openVipCard = function (e, pin, hover) {
     var v = e.vip; if (!v) return;
