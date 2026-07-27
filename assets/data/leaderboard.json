@@ -2,7 +2,7 @@
   "meta": {
     "title": "The Gathering of Meditators",
     "unit": "CMI",
-    "scaleMax": 391,
+    "scaleMax": 385,
     "updated": "2026-07-18",
     "count": "400+",
     "listTitle": "QM3 Standings",
@@ -11,10 +11,10 @@
     "learnMoreUrl": "https://www.wml.org"
   },
   "entries": [
-    { "city": "Dubai", "country": "United Arab Emirates", "cmi": 391, "lat": 25.2048, "lon": 55.2708 },
-    { "city": "Kuala Lumpur", "country": "Malaysia", "cmi": 377, "lat": 3.139, "lon": 101.6869 },
+    { "city": "Dubai", "country": "United Arab Emirates", "cmi": 385.2, "lat": 25.2048, "lon": 55.2708 },
+    { "city": "Kuala Lumpur", "country": "Malaysia", "cmi": 364.8, "lat": 3.139, "lon": 101.6869 },
     {
-      "city": "Sheffield", "country": "United Kingdom", "cmi": 336, "lat": 53.3811, "lon": -1.4701,
+      "city": "Sheffield", "country": "United Kingdom", "cmi": 283.0, "lat": 53.3811, "lon": -1.4701,
       "vip": {
         "name": "Hisami Tsurumori",
         "photo": "assets/participants/hisami-tsurumori.jpg?v=16",
@@ -22,12 +22,12 @@
         "bio": "Originally from Japan, now in Sheffield, Hisami has practiced Samatha meditation in the Theravada tradition for 16+ years as a tool for mental and physical well-being."
       }
     },
-    { "city": "San Francisco", "country": "United States", "cmi": 329, "lat": 37.7749, "lon": -122.4194 },
-    { "city": "Sacramento", "country": "United States", "cmi": 316, "lat": 38.5816, "lon": -121.4944 },
-    { "city": "", "country": "Germany", "cmi": 305, "lat": 52.52, "lon": 13.405 },
-    { "city": "", "country": "France", "cmi": 296, "lat": 48.8566, "lon": 2.3522 },
-    { "city": "", "country": "Australia", "cmi": 285, "lat": -33.8688, "lon": 151.2093 },
-    { "city": "", "country": "Romania", "cmi": 274, "lat": 44.4268, "lon": 26.1025 },
-    { "city": "", "country": "Brazil", "cmi": 263, "lat": -23.5505, "lon": -46.6333 }
+    { "city": "San Francisco", "country": "United States", "cmi": 262.6, "lat": 37.7749, "lon": -122.4194 },
+    { "city": "Sacramento", "country": "United States", "cmi": 259.9, "lat": 38.5816, "lon": -121.4944 },
+    { "city": "", "country": "Germany", "cmi": 259.5, "lat": 52.52, "lon": 13.405 },
+    { "city": "", "country": "France", "cmi": 257.9, "lat": 48.8566, "lon": 2.3522 },
+    { "city": "", "country": "Australia", "cmi": 248.8, "lat": -33.8688, "lon": 151.2093 },
+    { "city": "", "country": "Romania", "cmi": 237.1, "lat": 44.4268, "lon": 26.1025 },
+    { "city": "", "country": "Brazil", "cmi": 228.3, "lat": -23.5505, "lon": -46.6333 }
   ]
 }
