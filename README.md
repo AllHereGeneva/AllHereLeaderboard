@@ -122,13 +122,16 @@ running **stale code** until a hard refresh — which shows up as "my fix isn't
 live" bugs. To force fresh assets, the demo appends a version query:
 
 ```html
-<link rel="stylesheet" href="assets/leaderboard.css?v=5">
-<script src="assets/leaderboard.js?v=5"></script>
+<link rel="stylesheet" href="assets/leaderboard.css?v=3da4b710">
+<script src="assets/leaderboard.js?v=3da4b710"></script>
 ```
 
-**Bump the `?v=` number every time you change the CSS or JS** (and match it in any
-WordPress/embed snippet). Changing the query string makes the browser treat it as
-a new URL and re-download it.
+**Run `python3 build/bump-version.py` before every deploy** (and whenever you
+change `leaderboard.css`/`leaderboard.js` locally). It hashes the content of
+both files and rewrites the `?v=` query in `index.html` to match — no more
+manual incrementing, no more forgetting. Match the same value in any
+WordPress/embed snippet you maintain by hand. Changing the query string makes
+the browser treat it as a new URL and re-download it.
 
 ---
 
@@ -174,6 +177,7 @@ The `build/` scripts are one-off generators (run with Python 3):
 - `build-gazetteer.py` — builds the city→lat/lon table from GeoNames `cities15000`
   + `countryInfo.txt`.
 - `build-sample-data.py` — produces the sample dataset (for local preview only).
+- `bump-version.py` — cache-busts `leaderboard.css`/`.js` (see "Deploying updates" above).
 
 Source data (not committed): `ne_110m_land.geojson`, `cities15000.txt`,
 `countryInfo.txt` — download URLs are noted at the top of each script.
