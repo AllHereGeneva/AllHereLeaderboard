@@ -108,17 +108,23 @@
     this.scaleMax = meta.scaleMax || this.opt.scaleMax;
     this.unit = meta.unit || 'CMI';
 
-    // rank all entries by CMI desc
-    var entries = (this.data.entries || []).slice()
+    // SCORED entries (a real CMI) are ranked and listed; entries flagged as `dot`
+    // (no score) are just non-interactive location markers on the map.
+    var raw = (this.data.entries || []).slice();
+    var scored = raw.filter(function (e) { return typeof e.cmi === 'number' && !e.dot; })
       .sort(function (a, b) { return b.cmi - a.cmi; });
+    var dots = raw.filter(function (e) { return e.dot || typeof e.cmi !== 'number'; });
+    scored.forEach(function (e, i) { e.rank = i + 1; e._dot = false; });
+    dots.forEach(function (e) { e.rank = 0; e._dot = true; });
+    var entries = scored.concat(dots);
+    this.scoredCount = scored.length;
 
     var missing = [];
     entries.forEach(function (e, i) {
-      e.rank = i + 1;
       e.id = i;
       var c = this.geocode(e);
       if (c) { e._lat = c[0]; e._lon = c[1]; }
-      else { missing.push(e.city + ', ' + e.country); }
+      else { missing.push((e.city || e.country)); }
     }, this);
     this.entries = entries;
     if (missing.length) {
@@ -340,7 +346,7 @@
         '</span><span class="ahl__stat-label">' + s.l + '</span></div>';
     }).join('');
 
-    this.el.listsub.textContent = 'Top ' + this.opt.listTop + ' · ranked by ' + this.unit +
+    this.el.listsub.textContent = 'Ranked by ' + this.unit +
       ' — Concentration & Mindfulness Index (0–' + fmtInt(this.scaleMax) + ')';
 
     var note = meta.note
@@ -373,7 +379,7 @@
       var rest = this.entries.filter(function (e) { return !self.entryMatches(e); });
       top = matches.concat(rest).slice(0, Math.max(this.opt.listTop, matches.length));
     } else {
-      top = this.entries.slice(0, this.opt.listTop);
+      top = this.entries.filter(function (e) { return !e._dot; }).slice(0, this.opt.listTop);
     }
     // selection bar (pin click) — a back button + context, reusing this panel
     if (this.el.selbar) {
@@ -943,17 +949,19 @@
       var dot = el.firstChild;
       el.classList.remove('is-rank-1', 'is-rank-2', 'is-rank-3');
       if (clu.items.length > 1) {
-        el.classList.add('is-cluster'); el.classList.remove('is-top', 'is-vip');
+        el.classList.add('is-cluster'); el.classList.remove('is-top', 'is-vip', 'is-dot');
         dot.textContent = clu.items.length;
       } else {
         el.classList.remove('is-cluster');
-        el.classList.toggle('is-top', best.rank <= 3);
-        if (best.rank <= 3) el.classList.add('is-rank-' + best.rank);
+        var isDot = !!best._dot;                       // score-less, non-interactive marker
+        el.classList.toggle('is-dot', isDot);
+        el.classList.toggle('is-top', !isDot && best.rank <= 3);
+        if (!isDot && best.rank <= 3) el.classList.add('is-rank-' + best.rank);
         el.classList.toggle('is-vip', !!best.vip);   // distinct marker for VIPs
         dot.textContent = '';
       }
       // grey out anyone outside the top 20 (VIPs always stay highlighted)
-      el.classList.toggle('is-sub', best.rank > 20 && !best.vip);
+      el.classList.toggle('is-sub', !best._dot && best.rank > 20 && !best.vip);
       // highlight state (from list hover)
       var active = this.highlightId >= 0 && clu.items.some(function (e) { return e.id === this.highlightId; }, this);
       el.classList.toggle('is-active', active);

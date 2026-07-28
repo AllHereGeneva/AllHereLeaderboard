@@ -2,7 +2,7 @@
   "meta": {
     "title": "QM3 Standings",
     "unit": "CMI",
-    "scaleMax": 385,
+    "scaleMax": 336,
     "updated": "2026-07-18",
     "count": "400+",
     "listTitle": "Global Standings",
@@ -11,16 +11,6 @@
     "learnMoreUrl": "https://www.wml.org"
   },
   "entries": [
-    { "city": "Dubai", "country": "United Arab Emirates", "cmi": 385.2, "lat": 25.2048, "lon": 55.2708 },
-    { "city": "Kuala Lumpur", "country": "Malaysia", "cmi": 364.8, "lat": 3.139, "lon": 101.6869 },
-    {
-      "city": "Tokyo", "country": "Japan", "cmi": 284, "lat": 35.6895, "lon": 139.6917,
-      "vip": {
-        "name": "Yu Mizuno",
-        "photo": "assets/participants/yu-mizuno.jpg?v=16",
-        "bio": "A Tokyo-based certified yoga teacher whose practice spans Vipassana, Tibetan Buddhist retreats, pranayama and Kriya yoga, and regular Zen meditation at a Tokyo temple."
-      }
-    },
     {
       "city": "Sheffield", "country": "United Kingdom", "cmi": 336, "lat": 53.3811, "lon": -1.4701,
       "vip": {
@@ -30,17 +20,28 @@
         "bio": "Originally from Japan, now in Sheffield, Hisami has practiced Samatha meditation in the Theravada tradition for 16+ years as a tool for mental and physical well-being."
       }
     },
-    { "city": "San Francisco", "country": "United States", "cmi": 259.9, "lat": 37.7749, "lon": -122.4194 },
-    { "city": "Los Angeles", "country": "United States", "cmi": 259.5, "lat": 34.0522, "lon": -118.2437 },
-    { "city": "Sacramento", "country": "United States", "cmi": 257.9, "lat": 38.5816, "lon": -121.4944 },
-    { "city": "Chennai", "country": "India", "cmi": 248.8, "lat": 13.0827, "lon": 80.2707 },
-    { "city": "Bengaluru", "country": "India", "cmi": 237.1, "lat": 12.9716, "lon": 77.5946 },
-    { "city": "New Delhi", "country": "India", "cmi": 228.3, "lat": 28.6139, "lon": 77.209 },
-    { "city": "Kamakura", "country": "Japan", "cmi": 227.2, "lat": 35.3192, "lon": 139.5466 },
-    { "city": "", "country": "Germany", "cmi": 223.2, "lat": 52.52, "lon": 13.405 },
-    { "city": "", "country": "France", "cmi": 221.0, "lat": 48.8566, "lon": 2.3522 },
     { "city": "Sydney", "country": "Australia", "cmi": 295.03, "lat": -33.8688, "lon": 151.2093 },
-    { "city": "", "country": "Romania", "cmi": 218.1, "lat": 44.4268, "lon": 26.1025 },
-    { "city": "", "country": "Brazil", "cmi": 216.0, "lat": -23.5505, "lon": -46.6333 }
+    {
+      "city": "Tokyo", "country": "Japan", "cmi": 284, "lat": 35.6895, "lon": 139.6917,
+      "vip": {
+        "name": "Yu Mizuno",
+        "photo": "assets/participants/yu-mizuno.jpg?v=16",
+        "bio": "A Tokyo-based certified yoga teacher whose practice spans Vipassana, Tibetan Buddhist retreats, pranayama and Kriya yoga, and regular Zen meditation at a Tokyo temple."
+      }
+    },
+
+    { "city": "Dubai", "country": "United Arab Emirates", "dot": true, "lat": 25.2048, "lon": 55.2708 },
+    { "city": "Kuala Lumpur", "country": "Malaysia", "dot": true, "lat": 3.139, "lon": 101.6869 },
+    { "city": "San Francisco", "country": "United States", "dot": true, "lat": 37.7749, "lon": -122.4194 },
+    { "city": "Los Angeles", "country": "United States", "dot": true, "lat": 34.0522, "lon": -118.2437 },
+    { "city": "Sacramento", "country": "United States", "dot": true, "lat": 38.5816, "lon": -121.4944 },
+    { "city": "Chennai", "country": "India", "dot": true, "lat": 13.0827, "lon": 80.2707 },
+    { "city": "Bengaluru", "country": "India", "dot": true, "lat": 12.9716, "lon": 77.5946 },
+    { "city": "New Delhi", "country": "India", "dot": true, "lat": 28.6139, "lon": 77.209 },
+    { "city": "Kamakura", "country": "Japan", "dot": true, "lat": 35.3192, "lon": 139.5466 },
+    { "city": "", "country": "Germany", "dot": true, "lat": 52.52, "lon": 13.405 },
+    { "city": "", "country": "France", "dot": true, "lat": 48.8566, "lon": 2.3522 },
+    { "city": "", "country": "Romania", "dot": true, "lat": 44.4268, "lon": 26.1025 },
+    { "city": "", "country": "Brazil", "dot": true, "lat": -23.5505, "lon": -46.6333 }
   ]
 }
