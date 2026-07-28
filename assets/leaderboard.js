@@ -274,6 +274,7 @@
           '</aside>' +
         '</div>' +
         '<footer class="ahl__foot">' +
+          '<div class="ahl__foot-note" data-ahl="footnote"></div>' +
           '<div class="ahl__foot-main">' +
             '<div class="ahl__foot-brand">' +
               '<span class="ahl__foot-name"><i class="ahl__foot-dot"></i>World Meditation League</span>' +
@@ -309,7 +310,7 @@
     this.el = {};
     var self = this;
     ['title', 'subtitle', 'stats', 'map', 'canvas', 'pins', 'tip',
-      'zin', 'zout', 'zreset', 'listtitle', 'listsub', 'selbar', 'rows', 'footer', 'toggle', 'scrollcue', 'dataset',
+      'zin', 'zout', 'zreset', 'listtitle', 'listsub', 'selbar', 'rows', 'footer', 'footnote', 'toggle', 'scrollcue', 'dataset',
       'card', 'cardbg', 'filter', 'filterchips', 'filtertoggle'
     ].forEach(function (k) {
       self.el[k] = self.root.querySelector('[data-ahl="' + k + '"]');
@@ -348,11 +349,13 @@
           (meta.learnMoreUrl ? ' <a class="ahl__learn" href="' + esc(meta.learnMoreUrl) +
             '" target="_blank" rel="noopener noreferrer">Learn more &rarr;</a>' : '') + '</div>'
       : '';
-    this.el.footer.innerHTML = note +
+    var footHtml = note +
       '<div class="ahl__foot-meta">' +
         (meta.updated ? '<span>Updated ' + fmtDate(meta.updated) + '</span>' : '') +
         '<span>' + esc(count) + ' meditators worldwide</span>' +
       '</div>';
+    this.el.footer.innerHTML = footHtml;                        // in-panel (desktop)
+    if (this.el.footnote) this.el.footnote.innerHTML = footHtml; // in the bottom band (mobile)
   };
 
   // ---- ranked list ----

@@ -645,6 +645,7 @@
 .ahl__learn { color: var(--ahl-accent); font-weight: 600; text-decoration: none; white-space: nowrap; }
 .ahl__learn:hover { text-decoration: underline; }
 .ahl__foot-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.ahl__foot-note { display: none; }   /* desktop: the note lives in the panel footer instead */
 
 /* ---------- Footer band (bottom; map sits flush on top of it) ---------- */
 .ahl__foot {
@@ -848,7 +849,7 @@
   }
   .ahl__map {
     position: relative; inset: auto;
-    flex: 0 0 66dvh; height: auto;
+    flex: 0 0 56dvh; height: auto;
     touch-action: pan-y;               /* fit-zoom: vertical scrolls/snaps page; 2 fingers zoom */
   }
   .ahl__map.is-zoomed { touch-action: none; }   /* zoomed: map owns every gesture */
@@ -870,6 +871,15 @@
   .ahl__list-title { font-size: 0.95rem; }
   .ahl__list-sub { font-size: 10.5px; margin-bottom: 10px; }
   .ahl__toggle { display: none; }   /* in-flow list below the map: no retract tab */
+
+  /* free the panel for the rows: the note + updated move to the bottom band (next screen) */
+  .ahl__footer { display: none; }
+  .ahl__foot-note {
+    display: flex; flex-direction: column; gap: 8px;
+    padding-bottom: 14px; margin-bottom: 14px;
+    border-bottom: 1px solid var(--ahl-border);
+    color: var(--ahl-text-dim);
+  }
 
   .ahl__foot { padding: 10px 16px; scroll-snap-align: start; }
   .ahl__foot-main { gap: 12px 28px; }
