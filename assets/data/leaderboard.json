@@ -2,7 +2,7 @@
   "meta": {
     "title": "QM3 Standings",
     "unit": "CMI",
-    "scaleMax": 336,
+    "scaleMax": 385,
     "updated": "2026-07-18",
     "count": "400+",
     "listTitle": "Global Standings",
@@ -11,6 +11,8 @@
     "learnMoreUrl": "https://www.wml.org"
   },
   "entries": [
+    { "city": "San Francisco", "country": "United States", "cmi": 385.2, "lat": 37.7749, "lon": -122.4194 },
+    { "city": "Tokyo", "country": "Japan", "cmi": 364.8, "lat": 35.6895, "lon": 139.6917 },
     {
       "city": "Sheffield", "country": "United Kingdom", "cmi": 336, "lat": 53.3811, "lon": -1.4701,
       "vip": {
@@ -29,14 +31,20 @@
         "bio": "A Tokyo-based certified yoga teacher whose practice spans Vipassana, Tibetan Buddhist retreats, pranayama and Kriya yoga, and regular Zen meditation at a Tokyo temple."
       }
     },
+    { "city": "Sera Jey", "country": "India", "cmi": 283.0, "lat": 12.4239, "lon": 75.9739 },
+    { "city": "Bengaluru", "country": "India", "cmi": 262.6, "lat": 12.9716, "lon": 77.5946 },
+    { "city": "Tokyo", "country": "Japan", "cmi": 259.9, "lat": 35.6895, "lon": 139.6917 },
+    { "city": "Oxford", "country": "United Kingdom", "cmi": 259.5, "lat": 51.752, "lon": -1.2577 },
+    { "city": "Bengaluru", "country": "India", "cmi": 257.9, "lat": 12.9716, "lon": 77.5946 },
+    { "city": "Sera Jey", "country": "India", "cmi": 248.8, "lat": 12.4239, "lon": 75.9739 },
+    { "city": "Oxford", "country": "United Kingdom", "cmi": 237.1, "lat": 51.752, "lon": -1.2577 },
+    { "city": "San Francisco", "country": "United States", "cmi": 228.3, "lat": 37.7749, "lon": -122.4194 },
 
     { "city": "Dubai", "country": "United Arab Emirates", "dot": true, "lat": 25.2048, "lon": 55.2708 },
     { "city": "Kuala Lumpur", "country": "Malaysia", "dot": true, "lat": 3.139, "lon": 101.6869 },
-    { "city": "San Francisco", "country": "United States", "dot": true, "lat": 37.7749, "lon": -122.4194 },
     { "city": "Los Angeles", "country": "United States", "dot": true, "lat": 34.0522, "lon": -118.2437 },
     { "city": "Sacramento", "country": "United States", "dot": true, "lat": 38.5816, "lon": -121.4944 },
     { "city": "Chennai", "country": "India", "dot": true, "lat": 13.0827, "lon": 80.2707 },
-    { "city": "Bengaluru", "country": "India", "dot": true, "lat": 12.9716, "lon": 77.5946 },
     { "city": "New Delhi", "country": "India", "dot": true, "lat": 28.6139, "lon": 77.209 },
     { "city": "Kamakura", "country": "Japan", "dot": true, "lat": 35.3192, "lon": 139.5466 },
     { "city": "", "country": "Germany", "dot": true, "lat": 52.52, "lon": 13.405 },
