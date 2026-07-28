@@ -14,7 +14,7 @@
     { "city": "Dubai", "country": "United Arab Emirates", "cmi": 385.2, "lat": 25.2048, "lon": 55.2708 },
     { "city": "Kuala Lumpur", "country": "Malaysia", "cmi": 364.8, "lat": 3.139, "lon": 101.6869 },
     {
-      "city": "Tokyo", "country": "Japan", "cmi": 283.0, "lat": 35.6895, "lon": 139.6917,
+      "city": "Tokyo", "country": "Japan", "cmi": 284, "lat": 35.6895, "lon": 139.6917,
       "vip": {
         "name": "Yu Mizuno",
         "photo": "assets/participants/yu-mizuno.jpg?v=16",
@@ -22,7 +22,7 @@
       }
     },
     {
-      "city": "Sheffield", "country": "United Kingdom", "cmi": 262.6, "lat": 53.3811, "lon": -1.4701,
+      "city": "Sheffield", "country": "United Kingdom", "cmi": 336, "lat": 53.3811, "lon": -1.4701,
       "vip": {
         "name": "Hisami Tsurumori",
         "photo": "assets/participants/hisami-tsurumori.jpg?v=16",
