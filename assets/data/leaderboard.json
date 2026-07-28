@@ -36,9 +36,6 @@
     { "city": "Tokyo", "country": "Japan", "cmi": 259.9, "lat": 35.6895, "lon": 139.6917 },
     { "city": "Oxford", "country": "United Kingdom", "cmi": 259.5, "lat": 51.752, "lon": -1.2577 },
     { "city": "Bengaluru", "country": "India", "cmi": 257.9, "lat": 12.9716, "lon": 77.5946 },
-    { "city": "Sera Jey", "country": "India", "cmi": 248.8, "lat": 12.4239, "lon": 75.9739 },
-    { "city": "Oxford", "country": "United Kingdom", "cmi": 237.1, "lat": 51.752, "lon": -1.2577 },
-    { "city": "San Francisco", "country": "United States", "cmi": 228.3, "lat": 37.7749, "lon": -122.4194 },
 
     { "city": "Dubai", "country": "United Arab Emirates", "dot": true, "lat": 25.2048, "lon": 55.2708 },
     { "city": "Kuala Lumpur", "country": "Malaysia", "dot": true, "lat": 3.139, "lon": 101.6869 },
