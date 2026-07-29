@@ -2,6 +2,7 @@
 # (anchored to repo root so the PUBLIC assets/data/*.json is still published)
 /data/
 /data2/
+/data3/
 /build/
 
 # local tooling / OS cruft
