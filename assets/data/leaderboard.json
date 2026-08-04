@@ -22,7 +22,7 @@
         "bio": "Originally from Japan, now in Sheffield, Hisami has practiced Samatha meditation in the Theravada tradition for 16+ years as a tool for mental and physical well-being."
       }
     },
-    { "city": "Sydney", "country": "Australia", "cmi": 295.03, "lat": -33.8688, "lon": 151.2093 },
+    { "city": "Sydney", "country": "Australia", "cmi": 225, "lat": -33.8688, "lon": 151.2093 },
     {
       "city": "Tokyo", "country": "Japan", "cmi": 284, "lat": 35.6895, "lon": 139.6917,
       "vip": {
